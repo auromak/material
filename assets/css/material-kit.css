@@ -10498,6 +10498,9 @@ textarea {
   .page-header.header-small {
     height: 65vh;
     min-height: 65vh; }
+  .page-header.header-tiny {
+    height: 45vh;
+    min-height: 45vh; }
   .page-header .iframe-container iframe {
     width: 100%;
     box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
@@ -10539,7 +10542,8 @@ footer {
     padding: 0;
     list-style: none; }
     footer ul li {
-      display: inline-block; }
+      display: inline-block;
+      line-height: 1.3em; }
       footer ul li a {
         color: inherit;
         padding: 0.9375rem;

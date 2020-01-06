@@ -34,7 +34,7 @@
 
 
     .carousel .carousel-indicators {
-        bottom: 60px;
+        bottom: 60px;  //manual change to raise them up, might need to remove
     }
 
     > .container {
@@ -48,6 +48,11 @@
     &.header-small {
         height: 65vh;
         min-height: 65vh;
+    }
+
+    &.header-tiny {
+        height: 45vh;
+        min-height: 45vh;
     }
 
     .iframe-container {
