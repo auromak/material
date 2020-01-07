@@ -20,7 +20,7 @@
   <link href="./assets/demo/vertical-nav.css" rel="stylesheet" />
 </head>
 
-<body class="landing-page presentation-page contact-page sidebar-collapse">
+<body class="landing-page presentation-page contact-page sidebar-collapse" id="page-top">
   <nav class="navbar navbar-color-on-scroll navbar-transparent    fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
     <div class="container">
       <div class="navbar-translate">
@@ -36,28 +36,26 @@
         <ul class="navbar-nav ml-auto">
           <li class="dropdown nav-item">
             <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-              <i class="material-icons">apps</i> About
+              <i class="material-icons">storefront</i> About
             </a>
             <div class="dropdown-menu dropdown-with-icons">
               <a href="../about-us.html" class="dropdown-item">
-                <i class="material-icons">line_style</i> Who we are
+                <i class="material-icons">people</i> Who we are
               </a>
-              <a href="../index.html" class="dropdown-item">
-                <i class="material-icons">layers</i> What we do
+              <a href="../what-we-do.html" class="dropdown-item">
+                <i class="material-icons">computer</i> What we do
               </a>
-              <a href="http://demos.creative-tim.com/material-kit-pro/docs/2.1/getting-started/introduction.html" class="dropdown-item">
-                <i class="material-icons">content_paste</i> Linux
+              <a href="#" class="dropdown-item">
+                <i class="material-icons">compare</i> Compare
+              </a>
+              <a href="../material-kit-demo.html" class="dropdown-item">
+                <i class="material-icons">vertical_split</i> Theme demos
               </a>
             </div>
           </li>
           <li class="dropdown nav-item">
-            <a href="#" class="nav-link">
-              <i class="material-icons">view_day</i> Compare
-            </a>
-          </li>
-          <li class="dropdown nav-item">
             <a href="../contact-us.html" class="nav-link">
-              <i class="material-icons">view_carousel</i> Contact Us
+              <i class="material-icons">record_voice_over</i> Contact
             </a>
             <!-- <div class="dropdown-menu dropdown-with-icons">
               <a href="../examples/about-us.html" class="dropdown-item">
@@ -69,7 +67,7 @@
             </div> -->
           </li>
           <li class="button-container nav-item iframe-extern">
-            <a href="https://www.creative-tim.com/product/material-kit-pro?ref=presentation" target="_blank" class="btn  btn-success   btn-round btn-block">
+            <a href="../purchase.html" class="btn  btn-primary   btn-round btn-block">
               <i class="material-icons">shopping_cart</i> Buy Now
             </a>
           </li>
@@ -94,9 +92,8 @@
                   <div class="col-md-10 ml-auto mr-auto text-center">
                     <img class="img img-fluid" src="assets/img/webreadyHWR6-FinalWhite6.png">
                     <h4 class="title">We rescue used computers and restore them to new using Free and Open Source Software, custom tailored for your needs, with continuing support to keep you connected!</h3>
-                      <br>
                       <div class="buttons">
-                        <a href="#about" class="btn btn-success btn-lg">
+                        <a href="#contact" class="btn btn-success btn-round" data-number="1">
                           Read More
                         </a>
                       </div>
@@ -124,7 +121,7 @@
                         <a href="#pablo" class="btn btn-just-icon btn-white btn-link btn-lg">
                           <i class="fa fa-twitter"></i>
                         </a>
-                        <a href="#pablo" class="btn btn-just-icon btn-white btn-link btn-lg">
+                        <a href="https://www.facebook.com/Hardware-Rescue-LLC-105882404275675" class="btn btn-just-icon btn-white btn-link btn-lg">
                           <i class="fa fa-facebook-square"></i>
                         </a>
                         <a href="#pablo" class="btn btn-just-icon btn-white btn-link btn-lg">
@@ -143,7 +140,7 @@
             <div class="carousel-item">
               <div class="page-header">
                 <div class="container">
-                  <div class="row">
+                  <div class="row d-flex">
                     <div class="col-6">
                       <h2 class="title">No Computer?</h2>
                       <h4>No Problem! We can set you up with a complete computer system that we've already rescued, saving you hundreds of dollars!</h4>
@@ -155,7 +152,7 @@
                   <div class="row">
                     <div class="col">
                       <div class="buttons text-center">
-                        <a href="#pablo" class="btn btn-success btn-lg">
+                        <a href="#pablo" class="btn btn-success btn-round btn-lg">
                           <i class="material-icons">shopping_cart</i> Shop Now
                         </a>
                       </div>
@@ -169,231 +166,228 @@
       </div>
     </header>
 
-  <div class="main main-raised">
-    <div class="section text-center" id="about">
+    <div class="main main-raised">
       <div class="container">
-        <div class="row">
-          <div class="col-md-9 ml-auto mr-auto">
-            <h2 class="title">Does your computer need to be rescued?</h2>
-            <h5 class="description">These days, nearly everyone has a computer or laptop lying around, not being used to it's full potential. Maybe it's too slow, or has trouble launching your favorite applications. Maybe you've been meaning to throw it out or upgrade. Whatever the reason, we can bring it back to life for a fraction of the cost of buying a new one. Click below to learn more! </h5>
-          </div>
-        </div>
-        <div class="features">
+        <div class="section text-center" id="about">
           <div class="row">
-            <div class="col-md-4">
-              <div class="info info-horizontal">
-                <div class="icon icon-info">
-                  <i class="material-icons">group_work</i>
-                </div>
-                <div class="description">
-                  <h4 class="info-title">Slow Computer?</h4>
-                  <p>We'll replace Windows on your computer with a completely free alternative Operating System. This lightweight OS will breath new life into your computer,  </p>
-                  <a href="#pablo">Find more...</a>
+            <div class="col-md-9 ml-auto mr-auto">
+              <h2 class="title">Does your computer need to be rescued?</h2>
+              <h5 class="description">These days, nearly everyone has a computer or laptop lying around, not being used to it's full potential. Maybe it's too slow, or has trouble launching your favorite applications. Maybe you've been meaning to throw it out or upgrade. Whatever the reason, we can bring it back to life for a fraction of the cost of buying a new one. Click below to learn more! </h5>
+            </div>
+          </div>
+          <div class="features">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="info info-horizontal">
+                  <div class="icon icon-info">
+                    <i class="material-icons rtl">speed</i>
+                  </div>
+                  <div class="description">
+                    <h4 class="info-title">Slow Computer?</h4>
+                    <p>We'll replace Windows on your computer with a completely free alternative Operating System. This lightweight OS will breath new life into your computer,  </p>
+                    <a href="#pablo">Find more...</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="info info-horizontal">
-                <div class="icon icon-danger">
-                  <i class="material-icons">airplay</i>
-                </div>
-                <div class="description">
-                  <h4 class="info-title">Broken Computer?</h4>
-                  <p>Let us diagnose it and advise you on your options. Sometimes all it needs is an inexpensive replacement component, yet others it might be worth looking into a replacement.</p>
-                  <a href="#pablo">Find more...</a>
+              <div class="col-md-4">
+                <div class="info info-horizontal">
+                  <div class="icon icon-danger">
+                    <i class="material-icons">build</i>
+                  </div>
+                  <div class="description">
+                    <h4 class="info-title">Broken Computer?</h4>
+                    <p>Let us diagnose it and advise you on your options. Sometimes all it needs is an inexpensive replacement component, yet others it might be worth looking into a replacement.</p>
+                    <a href="#pablo">Find more...</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="info info-horizontal">
-                <div class="icon icon-success">
-                  <i class="material-icons">location_on</i>
-                </div>
-                <div class="description">
-                  <h4 class="info-title">No Computer?</h4>
-                  <p>No problem! We can set you up with a complete computer system that we've already rescued, saving you hundreds of dollars!</p>
-                  <a href="#pablo">Find more...</a>
+              <div class="col-md-4">
+                <div class="info info-horizontal">
+                  <div class="icon icon-success">
+                    <i class="material-icons">computer</i>
+                  </div>
+                  <div class="description">
+                    <h4 class="info-title">No Computer?</h4>
+                    <p>No problem! We can set you up with a complete computer system that we've already rescued, saving you hundreds of dollars!</p>
+                    <a href="#pablo">Find more...</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="section section-cards section-dark">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <div class="image-container">
-              <img class="img" src="./assets/img/section-components/hwr-laptop2.png">
-            </div>
-          </div>
-          <div class="col">
-            <h3 class="title">An easier to use, more accessible desktop</h3>
-            <h5 class="description">Microsoft Windows is expensive, insecure, bloated... and completely unnecessary! Join the rapidly-growing movement to leave it behind in favor of much more robust, completely FREE alternative used by millions of users and businesses around the world: Linux.
-            <br>Whether you need a desktop with extra-large font for the visually impaired, are worried about viruses and malware, or just want a more inexpensive option, we're here to help!</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section text-center pb-0" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 ml-auto mr-auto">
-            <h2 class="title">Simple, Secure and Accessible</h2>
-            <h5 class="description">Microsoft Windows is expensive, insecure, bloated... and completely unnecessary! Join the rapidly-growing movement to leave it behind in favor a of much more robust, completely FREE alternative used by millions of people and businesses around the world: Linux.
-            Whether you need a desktop with extra-large font for the visually impaired, are worried about viruses and malware, or just want a more inexpensive option, we've got you covered.</h5>
-          </div>
-        </div>
-        <div class="features">
+      <div class="section section-cards section-dark">
+        <div class="container">
           <div class="row">
-            <div class="col-md-4">
-              <div class="info">
-                <div class="icon icon-info">
-                  <i class="material-icons">chat</i>
-                </div>
-                <h4 class="info-title">Easy to use</h4>
-                <p>Using a computer can be intimidating, but we make it easy! Simplified menus and shortcuts, etc, etc***</p>
+            <div class="col-md-8">
+              <div class="image-container">
+                <img class="img" src="./assets/img/section-components/hwr-laptop2.png">
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="info">
-                <div class="icon icon-success">
-                  <i class="material-icons">verified_user</i>
-                </div>
-                <h4 class="info-title">More Secure</h4>
-                <p>With Windows, multiple layers of virus protection are still not enough to keep your computer malware and virus free. But not so with...***</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="info">
-                <div class="icon icon-danger">
-                  <i class="material-icons">fingerprint</i>
-                </div>
-                <h4 class="info-title">Customizable</h4>
-                <p>Would larger font sizes and icons be a welcome improvement? Is keeping track of your cursor sometimes difficult?  Tell us what's holding you back, and we'll provide the solution!</p>
+            <div class="col">
+              <h3 class="title">An easier to use, more accessible desktop</h3>
+              <h5 class="description">Most Operating Systems are expensive, insecure, bloated... and completely unnecessary! Join the rapidly-growing movement to leave it behind in favor of much more robust, completely FREE alternative used by millions of users and businesses around the world: Linux.
+                <br>Whether you need a desktop with extra-large font for the visually impaired, are worried about viruses and malware, or just want a more inexpensive option, we're here to help!</h5>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="section text-center pb-1">
-      <h2 class="title">Meet the team</h2>
-      <div class="container">
-        <div class="row d-flex">
-          <div class="col-md">
-            <div class="card card-plain">
-              <div class="col-sm-6 ml-auto mr-auto">
-                <img src="./assets/img/faces/justin.png" alt="Thumbnail Image" class="img img-fluid">
-              </div>
-              <h4 class="card-title">Justin Delphenich <br>
-                <small class="card-description text-muted">Computer Geek</small>
-              </h4>
-              <div class="card-body">
-                <p class="card-description">Grew up with computers, became increasingly frustrated with Windows' cost and limitations, especially when helping elderly family members. Collaborated with Andrew to find a better way</p>
-              </div>
-              <div class="card-footer justify-content-center">
-                <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
-                <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="card card-plain">
-              <div class="col-sm-6 ml-auto mr-auto">
-                <img src="./assets/img/faces/andrew.png" alt="Thumbnail Image" class="img img-fluid">
-              </div>
-              <h4 class="card-title">Andrew Hadfield<br>
-                <small class="card-description text-muted">Computer Geek/Programmer</small>
-              </h4>
-              <div class="card-body">
-                <p class="card-description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
-              </div>
-              <div class="card-footer justify-content-center">
-                <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="contact-content">
-      <div class="container">
-        <h2 class="title">Let's get in touch</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <p class="description">Ready to get the most out of your computer for an unbeatable price? Give us a call or send us an email (or fill out and submit the form below), and we will schedule a free appraisal at your convenience!<br><br>
-            </p>
-            <form role="form" id="contact-form" method="post">
-              <div class="form-group">
-                <label for="name" class="bmd-label-floating">Your name</label>
-                <input type="text" class="form-control" id="name">
+        <div class="container">
+          <div class="section text-center pb-0" id="about">
+            <div class="row">
+              <div class="col-md-8 ml-auto mr-auto">
+                <h2 class="title">Simple, Secure and Accessible</h2>
+                <h5 class="description">Microsoft Windows is expensive, insecure, bloated... and completely unnecessary! Join the rapidly-growing movement to leave it behind in favor a of much more robust, completely FREE alternative used by millions of people and businesses around the world: Linux.
+                  Whether you need a desktop with extra-large font for the visually impaired, are worried about viruses and malware, or just want a more inexpensive option, we've got you covered.</h5>
+                </div>
               </div>
-              <div class="form-group">
-                <label for="exampleInputEmails" class="bmd-label-floating">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmails">
-                <span class="bmd-help">We'll never share your email with anyone else.</span>
-              </div>
-              <div class="form-group">
-                <label for="phone" class="bmd-label-floating">Phone</label>
-                <input type="text" class="form-control" id="phone">
-              </div>
-              <div class="form-group label-floating">
-                <label class="form-control-label bmd-label-floating" for="message"> Tell us how we can help</label>
-                <textarea class="form-control" rows="6" id="message"></textarea>
-              </div>
-              <div class="submit text-center">
-                <input type="submit" class="btn btn-primary btn-raised btn-round" value="Contact Us">
-              </div>
-            </form>
-          </div>
-          <div class="col-md-4 ml-auto">
-            <div class="info info-horizontal">
-              <div class="icon icon-primary">
-                <i class="material-icons">pin_drop</i>
-              </div>
-              <div class="description">
-                <h4 class="info-title">Currently serving the SW Florida area</h4>
-                <p> 4113 Residence Dr.<br>
-                  Fort Myers, Florida
-                </p>
-              </div>
-            </div>
-            <div class="info info-horizontal">
-              <div class="icon icon-primary">
-                <i class="material-icons">phone</i>
-              </div>
-              <div class="description">
-                <h4 class="info-title">Give us a ring</h4>
-                <p> (321) 420-4569<br>
-                  Mon - Fri, 8:00-5:00
-                </p>
+              <div class="features">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="info">
+                      <div class="icon icon-info">
+                        <i class="material-icons">chat</i>
+                      </div>
+                      <h4 class="info-title">Easy to use</h4>
+                      <p>Using a computer can be intimidating, but we make it easy! Simplified menus and shortcuts, etc, etc***</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="info">
+                      <div class="icon icon-success">
+                        <i class="material-icons">verified_user</i>
+                      </div>
+                      <h4 class="info-title">More Secure</h4>
+                      <p>With Windows, multiple layers of virus protection are still not enough to keep your computer malware and virus free. But not so with...***</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="info">
+                      <div class="icon icon-danger">
+                        <i class="material-icons">fingerprint</i>
+                      </div>
+                      <h4 class="info-title">Customizable</h4>
+                      <p>Would larger font sizes and icons be a welcome improvement? Is keeping track of your cursor sometimes difficult?  Tell us what's holding you back, and we'll provide the solution!</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="info info-horizontal">
-              <div class="icon icon-primary">
-                <i class="material-icons">mail</i>
+            <hr>
+            <div class="section text-center pb-1">
+              <h2 class="title">Meet the team</h2>
+              <div class="row d-flex">
+                <div class="col-md">
+                  <div class="card card-plain">
+                    <div class="col-sm-6 ml-auto mr-auto">
+                      <img src="./assets/img/faces/justin.png" alt="Thumbnail Image" class="img img-fluid">
+                    </div>
+                    <h4 class="card-title">Justin Delphenich <br>
+                      <small class="card-description text-muted">Computer Geek</small>
+                    </h4>
+                    <div class="card-body">
+                      <p class="card-description">Grew up with computers, became increasingly frustrated with Windows' cost and limitations, especially when helping elderly family members. Collaborated with Andrew to find a better way</p>
+                    </div>
+                    <div class="card-footer justify-content-center">
+                      <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                      <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
+                      <a href="https://www.facebook.com/Hardware-Rescue-LLC-105882404275675" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md">
+                  <div class="card card-plain">
+                    <div class="col-sm-6 ml-auto mr-auto">
+                      <img src="./assets/img/faces/andrew.png" alt="Thumbnail Image" class="img img-fluid">
+                    </div>
+                    <h4 class="card-title">Andrew Hadfield<br>
+                      <small class="card-description text-muted">Computer Geek/Programmer</small>
+                    </h4>
+                    <div class="card-body">
+                      <p class="card-description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                    </div>
+                    <div class="card-footer justify-content-center">
+                      <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                      <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="description">
-                <h4 class="info-title">Email us</h4>
-                <p> Use the form on the left,<br>
-                  or just send an email to:<br>
-                  <a href="mailto:info@hardwarerescue.com">info@hardwarerescue.com</a>
-                </p>
+            </div>
+            <hr>
+            <div class="contact-content" id="contact">
+              <h2 class="title">Let's get in touch</h2>
+              <div class="row">
+                <div class="col-md-6">
+                  <p class="description">Ready to get the most out of your computer for an unbeatable price? Give us a call or send us an email (or fill out and submit the form below), and we will schedule a free appraisal at your convenience!<br><br>
+                  </p>
+                  <form role="form" id="contact-form" method="post">
+                    <div class="form-group">
+                      <label for="name" class="bmd-label-floating">Your name</label>
+                      <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmails" class="bmd-label-floating">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmails">
+                      <span class="bmd-help">We'll never share your email with anyone else.</span>
+                    </div>
+                    <div class="form-group">
+                      <label for="phone" class="bmd-label-floating">Phone</label>
+                      <input type="text" class="form-control" id="phone">
+                    </div>
+                    <div class="form-group label-floating">
+                      <label class="form-control-label bmd-label-floating" for="message"> Tell us how we can help</label>
+                      <textarea class="form-control" rows="6" id="message"></textarea>
+                    </div>
+                    <div class="submit text-center">
+                      <input type="submit" class="btn btn-primary btn-raised btn-round" value="Contact Us">
+                    </div>
+                  </form>
+                </div>
+                <div class="col-md-4 ml-auto">
+                  <div class="info info-horizontal">
+                    <div class="icon icon-primary">
+                      <i class="material-icons">pin_drop</i>
+                    </div>
+                    <div class="description">
+                      <h4 class="info-title">Currently serving the SW Florida area</h4>
+                      <p> 4113 Residence Dr.<br>
+                        Fort Myers, Florida
+                      </p>
+                    </div>
+                  </div>
+                  <div class="info info-horizontal">
+                    <div class="icon icon-primary">
+                      <i class="material-icons">phone</i>
+                    </div>
+                    <div class="description">
+                      <h4 class="info-title">Give us a ring</h4>
+                      <p> (321) 420-4569<br>
+                        Mon - Fri, 8:00-5:00
+                      </p>
+                    </div>
+                  </div>
+                  <div class="info info-horizontal">
+                    <div class="icon icon-primary">
+                      <i class="material-icons">mail</i>
+                    </div>
+                    <div class="description">
+                      <h4 class="info-title">Email us</h4>
+                      <p> Use the form on the left,<br>
+                        or just send an email to:<br>
+                        <a href="mailto:info@hardwarerescue.com">info@hardwarerescue.com</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    </div>
 
   <!-- <div class="section section-blog">
     <div class="container">
@@ -562,7 +556,7 @@
             </a>
           </li>
           <li>
-            <a href="#pablo" class="btn btn-just-icon btn-link btn-facebook">
+            <a href="https://www.facebook.com/Hardware-Rescue-LLC-105882404275675" class="btn btn-just-icon btn-link btn-facebook">
               <i class="fa fa-facebook-square"></i>
             </a>
           </li>
@@ -677,7 +671,7 @@
   <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
   <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
   <!--  Google Maps Plugin    -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0FVXhs3nWU7QeRGtDNWurU93tx6KX_-c"></script>
   <!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
   <script src="./assets/js/plugins/bootstrap-tagsinput.js"></script>
   <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->

@@ -11200,6 +11200,13 @@ h2.title {
     line-height: 1.42857143;
     color: #777; }
 
+.rtl {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -webkit-filter: FlipH;
+          filter: FlipH;
+  -ms-filter: "FlipH"; }
+
 .nav-tabs {
   border: 0;
   border-radius: 3px;
