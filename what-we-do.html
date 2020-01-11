@@ -29,12 +29,13 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
   <link href="../assets/css/material-kit.css?v=2.2.0" rel="stylesheet" />
+  <link href="../assets/css/custom.css" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <!-- <link href="../assets/demo/demo.css" rel="stylesheet" /> -->
   <link href="../assets/demo/vertical-nav.css" rel="stylesheet" />
 </head>
 
-<body class="landing-page contact-page sidebar-collapse">
+<body class="landing-page about-us custom-page sidebar-collapse">
   <nav class="navbar navbar-color-on-scroll navbar-transparent    fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
     <div class="container">
       <div class="navbar-translate">
@@ -50,20 +51,20 @@
         <ul class="navbar-nav ml-auto">
           <li class="dropdown nav-item">
             <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-              <i class="material-icons">storefront</i> About
+              <i class="material-icons">info</i> About
             </a>
             <div class="dropdown-menu dropdown-with-icons">
               <a href="../about-us.html" class="dropdown-item">
-                <i class="material-icons">people</i> Who we are
+                <i class="material-icons">people</i> Who We Are
               </a>
               <a href="../what-we-do.html" class="dropdown-item">
-                <i class="material-icons">computer</i> What we do
+                <i class="material-icons">computer</i> What We Do
               </a>
-              <a href="#" class="dropdown-item">
+              <a href="../compare.html" class="dropdown-item">
                 <i class="material-icons">compare</i> Compare
               </a>
               <a href="../material-kit-demo.html" class="dropdown-item">
-                <i class="material-icons">vertical_split</i> Theme demos
+                <i class="material-icons">vertical_split</i> Theme Demos (admin)
               </a>
             </div>
           </li>
@@ -102,52 +103,57 @@
   </div>
   <div class="main main-raised">
     <div class="container">
-      <div class="about-services features-2">
+      <div class="section features-2">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center">
-            <h2 class="title">We build awesome products</h2>
-            <h5 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information.</h5>
+            <h2 class="title">What it means to rescue computers</h2>
+            <h5 class="description">These days, nearly everyone has a computer or laptop lying around, not being used to it's full potential. Maybe it's too slow, or has trouble launching your favorite applications. Maybe you've been meaning to upgrade to something faster, but are hesitant to spend nearly a thousand dollars for a new computer. Read below to see how Hardware Rescue can help!</h5>
+            <br>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4">
-            <div class="info info-horizontal">
-              <div class="icon icon-rose">
-                <i class="material-icons">gesture</i>
+          <div class="col-md-8 mx-auto">
+            <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
+              <!--
+                              color-classes: "nav-pills-primary", "nav-pills-info", "nav-pills-success", "nav-pills-warning","nav-pills-danger"
+                          -->
+              <li class="nav-item">
+                <a class="nav-link active" href="#dashboard-1" role="tab" data-toggle="tab">
+                  <i class="material-icons rtl success">speed</i>
+                  Slow Computer
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link info" href="#schedule-1" role="tab" data-toggle="tab">
+                  <i class="material-icons danger">build</i>
+                  Broken Computer
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tasks-1" role="tab" data-toggle="tab">
+                  <i class="material-icons">computer</i>
+                  No Computer
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content tab-space">
+              <div class="tab-pane active" id="dashboard-1">
+                <h5 class="description">At Hardware Rescue we install the best Free and Open Source (FOSS) software available on your computer. We can replace your current operating system (typically Microsoft Windows) with a completely free alternative.
+                  <br>
+                  <br>
+                  This will improve your computers performance, limit your vulnerability to malware and viruses, and with no forced or paid updates. Your computer can run like new with a little help from Hardware Rescue!</h5>
               </div>
-              <div class="description">
-                <h4 class="info-title">1. Design</h4>
-                <p>The moment you use Material Kit, you know you&#x2019;ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
-                <a href="#pablo">Find more...</a>
+              <div class="tab-pane" id="schedule-1">
+                <h5 class="description">Let us evaluate your computer and consult with you on the best course of action: repair or replace. Many problems can be fixed by replacing a single component, and with older hardware, they are usually pretty inexpensive. If we can, we'll get your old computer working like new, saving you money.
+                  <br><br>Sometimes however, the cost to bring an aging computer back to life is just too high. In that case, we can offer a fantastic, modern computer that we've already rescued, at a fraction of the price new.
               </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="info info-horizontal">
-              <div class="icon icon-rose">
-                <i class="material-icons">build</i>
-              </div>
-              <div class="description">
-                <h4 class="info-title">2. Develop</h4>
-                <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
-                <a href="#pablo">Find more...</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="info info-horizontal">
-              <div class="icon icon-rose">
-                <i class="material-icons">mode_edit</i>
-              </div>
-              <div class="description">
-                <h4 class="info-title">3. Make Edits</h4>
-                <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
-                <a href="#pablo">Find more...</a>
-              </div>
+              <div class="tab-pane" id="tasks-1">
+                <h5 class="description">We seek out schools and businesses that are upgrading their gently-used computer systems and buy them for pennies on the dollar.  Then we refurbish them, configure them with the best free software, and sell them to you at an unbeatable price!
+                  <br><br>Since all the software is all free, you only pay for our time and effort ensuring everything is working smoothly. Also, every rescued computer comes with three months of free support: We'll be here to help if you're having trouble!
+                </div>
             </div>
           </div>
         </div>
-      </div>
       <div class="about-office">
         <div class="row text-center">
           <div class="col-md-8 ml-auto mr-auto">
@@ -211,6 +217,7 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
   <footer class="footer footer-big">
     <div class="container">
@@ -353,7 +360,7 @@
   <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
   <script src="../assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
   <!--  Google Maps Plugin    -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
   <!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
   <script src="../assets/js/plugins/bootstrap-tagsinput.js"></script>
   <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->

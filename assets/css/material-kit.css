@@ -11061,6 +11061,12 @@ footer {
 .icon.icon-rose {
   color: #e91e63; }
 
+.info-contact {
+  padding-bottom: 10px;
+  padding-top: 0px; }
+  .info-contact .title {
+    margin: 25px 0 10px; }
+
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-weight: 500;
@@ -15547,6 +15553,9 @@ select.selectpicker {
   .blog-posts .card-form-horizontal form .form-group .form-control {
     width: 100%; }
 
+.custom-page .container {
+  max-width: 970px; }
+
 .contact-page .contact-content {
   padding-bottom: 40px;
   padding-top: 40px; }
@@ -15555,7 +15564,7 @@ select.selectpicker {
   max-width: 970px; }
 
 .contact-page .big-map {
-  height: 55vh;
+  height: 45vh;
   width: 100%;
   display: block;
   position: relative; }
