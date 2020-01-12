@@ -7259,7 +7259,7 @@ button:focus {
         color: #999999; }
   .btn.btn-white, .btn.btn-white:focus, .btn.btn-white:hover {
     background-color: #fff;
-    color: #999999; }
+    color: #696969; }
   .btn.btn-white.btn-link {
     color: #fff;
     background: transparent;
@@ -11177,6 +11177,9 @@ h2.title {
 .text-gray {
   color: #999999 !important; }
 
+.text-black {
+  color: #3C4858; }
+
 .space {
   height: 130px;
   display: block; }
@@ -11212,6 +11215,9 @@ h2.title {
   -webkit-filter: FlipH;
           filter: FlipH;
   -ms-filter: "FlipH"; }
+
+.text-shadow {
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5); }
 
 .nav-tabs {
   border: 0;

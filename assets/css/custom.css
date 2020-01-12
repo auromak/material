@@ -11,3 +11,11 @@ height:100%;
 width:100%;
 position:absolute;
 }
+
+.container .content-bg {
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.4); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 3px; /* Some padding */
+}
