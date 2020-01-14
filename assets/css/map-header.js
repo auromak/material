@@ -1,9 +1,9 @@
 materialKitMap = {
 
   initContactUsMap: function() {
-    var myLatlng = new google.maps.LatLng(26.602260, -81.864340);
+    var myLatlng = new google.maps.LatLng(26.599260, -81.854340);
     var mapOptions = {
-      zoom: 14,
+      zoom: 13,
       center: myLatlng,
       styles: [{
         "featureType": "water",
