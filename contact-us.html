@@ -36,7 +36,7 @@ The above copyright notice and this permission notice shall be included in all c
 </head>
 
 <body class="contact-page sidebar-collapse">
-  <nav class="navbar     fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
+  <nav class="navbar fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
     <div class="container">
       <div class="navbar-translate">
         <a class="navbar-brand" href="/index.html">Hardware Rescue</a>
@@ -99,26 +99,26 @@ The above copyright notice and this permission notice shall be included in all c
       <h5 class="text-muted text-center">Ready to get the most out of your computer for an unbeatable price? Give us a call or send us an email (or fill out and submit the form below), and we will schedule a free appraisal at your convenience!</h5><br>
       <div class="row">
         <div class="col-md-6 offset-1">
-          <form role="form" id="contact-form" method="post">
+          <form id="contact-form" method="post" action="formaction.php" accept-charset="UTF-8">
             <div class="form-group">
-              <label for="name" class="bmd-label-floating text-muted">Your name</label>
-              <input type="text" class="form-control" id="name">
+              <label for="online_name" class="bmd-label-floating text-muted">Your name</label>
+              <input type="text" class="form-control" name="online_name">
             </div>
             <div class="form-group">
-              <label for="exampleInputEmails" class="bmd-label-floating text-muted">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmails">
+              <label for="email_address" class="bmd-label-floating text-muted">Email address</label>
+              <input type="email" class="form-control" name="email_address">
               <span class="bmd-help">We'll never share your email with anyone else.</span>
             </div>
             <div class="form-group">
-              <label for="phone" class="bmd-label-floating text-muted">Phone</label>
-              <input type="text" class="form-control" id="phone">
+              <label for="phone_number" class="bmd-label-floating text-muted">Phone</label>
+              <input type="text" class="form-control" name="phone_number">
             </div>
             <div class="form-group label-floating">
-              <label class="form-control-label bmd-label-floating text-muted" for="message"> Tell us how we can help</label>
-              <textarea class="form-control" rows="6" id="message"></textarea>
+              <label class="form-control-label bmd-label-floating text-muted" for="comments"> Tell us how we can help</label>
+              <textarea class="form-control" rows="6" name="comments"></textarea>
             </div>
             <div class="submit text-center">
-              <input type="submit" class="btn btn-primary btn-raised btn-round" value="Contact Us">
+              <input type="submit" name="contactus" class="btn btn-primary btn-raised btn-round" value="Contact Us">
             </div>
           </form>
         </div>

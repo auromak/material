@@ -4,7 +4,7 @@
     echo "You cannot access this page directly";
     die();
   } else {
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['contactus'])) {
       $name = $_POST['online_name'];
       $phone = $_POST['phone_number'];
       $email = $_POST['email_address'];
@@ -30,13 +30,9 @@
       curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
       //Execute the request
       $result = curl_exec($ch);
-      //Error Log
-      var_dump($jsonData);
       //Redirect
-      //header("Location: /thanks.html");
+      header("Location: /thanks.html");
       exit;
     }
   }
-
-
 ?>
