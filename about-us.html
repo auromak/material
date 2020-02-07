@@ -228,30 +228,30 @@
           <div class="col-md-8 ml-auto mr-auto">
             <h2 class="text-center title mt-0">Want some more information?</h2>
             <h4 class="text-center description text-muted">Leave your name and the best way to contact you, and we'll get in touch!</h4>
-            <form class="contact-form">
+            <form class="contact-form" id="small-form" method="post" action="formaction.php">
               <div class="row">
                 <div class="col-md-4">
                   <div class="form-group">
                     <label for="name" class="bmd-label-floating">Your Name</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="online_name">
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="form-group">
                     <label for="email" class="bmd-label-floating">Your Email</label>
-                    <input type="email" class="form-control">
+                    <input type="email" class="form-control" name="email_address">
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="form-group">
                     <label for="phone" class="bmd-label-floating">Your Phone</label>
-                    <input type="phone" class="form-control">
+                    <input type="phone" class="form-control" name="phone_number">
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-4 ml-auto mr-auto text-center">
-                  <button class="btn btn-primary btn-round">
+                  <button class="btn btn-primary btn-round" type="submit" name="contactus" form="small-form">
                     Let&apos;s talk
                   </button>
                 </div>
@@ -336,11 +336,11 @@
             <p>
               Join our newsletter and get occasional bits of news and updates.
             </p>
-            <form class="form form-newsletter" method="" action="">
+            <form id="mailing-list" class="form form-newsletter" method="post" action="formaction.php" accept-charset="UTF-8">
               <div class="form-group">
-                <input type="email" class="form-control" placeholder="Your Email...">
+                <input type="email" class="form-control" placeholder="Your Email..." name="email_address">
               </div>
-              <button type="button" class="btn btn-primary btn-just-icon" name="button">
+              <button type="submit" name="mailinglist" class="btn btn-primary btn-just-icon" form="mailing-list">
                 <i class="material-icons">mail</i>
               </button>
             </form>
