@@ -4,7 +4,7 @@
     echo "You cannot access this page directly";
     die();
   } else {
-    if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['contactus'])) {
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {   //removed  && isset($_POST['contactus'])
       if (isset($_POST['g-recaptcha-response'])) {
         $captcha = $_POST['g-recaptcha-response'];
         if (!$captcha) {
@@ -12,7 +12,7 @@
           header("Location: /compare.html");
         }
         else {
-          $captcha_resp=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LeELNYUAAAAAM73HNCh0j434SGOy1Rw7W8D9eFw&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']);
+          $captcha_resp=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LeDkdYUAAAAAC-ICf5fNB4ERbUB-wF4bB22n9G6&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']);
           $captcha_verify = json_decode($captcha_resp);
           if ($captcha_verify->success) {
             $name = $_POST['online_name'];
