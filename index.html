@@ -19,7 +19,20 @@
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="./assets/demo/demo.css" rel="stylesheet" />
   <link href="./assets/demo/vertical-nav.css" rel="stylesheet" />
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+<script type="text/javascript">
+  var onLoad = function() {
+    widgetId = grecaptcha.render('myrecaptcha', {
+      'sitekey' : '6LeDkdYUAAAAAAdki4z2MjgqeZ7613JMNH4DFRLO',
+      'callback' : function(captchaResponse){ alert('recaptcha callback triggered ' + captchaResponse) },
+    });
+  };
+  alert('grecaptch rendered');
+</script>
+
+
+  <script src="https://www.google.com/recaptcha/api.js?onload=onLoad&render=explicit" async defer></script>
 </head>
 
 <body class="landing-page custom-page presentation-page sidebar-collapse" id="page-top">
@@ -326,14 +339,14 @@
           <h5 class="text-muted text-center">Ready to get the most out of your computer for an unbeatable price? Give us a call or send us an email (or fill out and submit the form below), and we will schedule a free appraisal at your convenience!</h5>
           <div class="row">
             <div class="col-md-6 offset-1">
-              <form id="contact-form" method="POST" action="verify.php" accept-charset="UTF-8">
+              <form id="contact-form" method="POST" action="formaction.php" accept-charset="UTF-8">
                 <div class="form-group">
                   <label for="online_name" class="bmd-label-floating text-muted">Your name</label>
-                  <input type="text" class="form-control" name="online_name" id="online_name">
+                  <input type="text" class="form-control" name="online_name" id="online_name" required>
                 </div>
                 <div class="form-group">
                   <label for="email_address" class="bmd-label-floating text-muted">Email address</label>
-                  <input type="email" class="form-control" name="email_address">
+                  <input type="email" class="form-control" name="email_address" id="email_address" required>
                   <span class="bmd-help">We'll never share your email with anyone else.</span>
                 </div>
                 <div class="form-group">
@@ -344,15 +357,14 @@
                   <label class="form-control-label bmd-label-floating text-muted" for="comments"> Tell us how we can help</label>
                   <textarea class="form-control" rows="6" name="comments"></textarea>
                 </div>
-                <div id='recaptcha' class="g-recaptcha"
+                <button type="submit" class="btn btn-primary btn-raised btn-round">Send</button>
+                <div id='myrecaptcha' class="g-recaptcha" data-badge="inline" data-size="invisible"></div>
+                <!-- <div id='recaptcha' class="g-recaptcha"
                      data-sitekey="6LeDkdYUAAAAAAdki4z2MjgqeZ7613JMNH4DFRLO"
                      data-callback="onSubmit"
                      data-badge="inline"
                      data-size="invisible">
-                </div>
-                <button id="submit" class="btn btn-primary btn-raised btn-round">
-                  Send
-                </button>
+                </div> -->
               </form>
             </div>
             <div class="col-md-4 ml-auto">

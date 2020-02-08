@@ -27,7 +27,9 @@
 
     form.submit(function (e) {
         e.preventDefault();
-        alert('my custom submit action');
+        grecaptcha.execute(widgetId);
+        alert('grecaptcha executed')
+
         // form_data = $(this).serialize();
         // $.ajax({
         //     type: 'POST',
