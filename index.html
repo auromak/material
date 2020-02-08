@@ -23,7 +23,7 @@
 
 <script type="text/javascript">
   var onLoad = function() {
-    widgetId = grecaptcha.render('myrecaptcha', {
+    recapWidgetId = grecaptcha.render('contactrecaptcha', {
       'sitekey' : '6LeDkdYUAAAAAAdki4z2MjgqeZ7613JMNH4DFRLO',
       'callback' : function(captchaResponse){ alert('recaptcha callback triggered ' + captchaResponse) },
     });
@@ -358,7 +358,7 @@
                   <textarea class="form-control" rows="6" name="comments"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary btn-raised btn-round">Send</button>
-                <div id='myrecaptcha' class="g-recaptcha" data-badge="inline" data-size="invisible"></div>
+                <div id='contactrecaptcha' class="g-recaptcha" data-badge="inline" data-size="invisible"></div>
                 <!-- <div id='recaptcha' class="g-recaptcha"
                      data-sitekey="6LeDkdYUAAAAAAdki4z2MjgqeZ7613JMNH4DFRLO"
                      data-callback="onSubmit"

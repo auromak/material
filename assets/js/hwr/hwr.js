@@ -27,8 +27,8 @@
 
     form.submit(function (e) {
         e.preventDefault();
-        grecaptcha.execute(widgetId);
-        alert('grecaptcha executed')
+        grecaptcha.execute(recapWidgetId);
+        alert('grecaptcha executed');
 
         // form_data = $(this).serialize();
         // $.ajax({
