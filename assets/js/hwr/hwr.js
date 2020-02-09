@@ -7,13 +7,13 @@
 
     // Success function
     function done_func(response) {
-        message.fadeIn()
-        message.html(response);
-        setTimeout(function () {
-            message.fadeOut();
-        }, 5000);
-
-        form.find('input:not([type="submit"]), textarea').val('');
+        if (response.length == 0 ) {
+          alert('recaptcha failed');
+        }
+        else {
+          alert(response);
+          $('#contact-form').submit();
+        }
     }
 
     // fail function
@@ -29,7 +29,7 @@
         e.preventDefault();
         grecaptcha.execute(recapWidgetId);
         alert('grecaptcha executed');
-
+        //e.submit();
         // form_data = $(this).serialize();
         // $.ajax({
         //     type: 'POST',

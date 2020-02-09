@@ -23,12 +23,12 @@
 
 <script type="text/javascript">
   var onLoad = function() {
-    recapWidgetId = grecaptcha.render('contactrecaptcha', {
+    recapWidgetId = grecaptcha.render('contactrecaptcha',
+      {
       'sitekey' : '6LeDkdYUAAAAAAdki4z2MjgqeZ7613JMNH4DFRLO',
-      'callback' : function(captchaResponse){ alert('recaptcha callback triggered ' + captchaResponse) },
-    });
-  };
-  alert('grecaptch rendered');
+      'callback' : onSubmit,
+      });
+    };
 </script>
 
 
