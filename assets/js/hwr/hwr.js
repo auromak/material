@@ -44,3 +44,7 @@ function onSubmit(token) {
   //alert('about to submit document form ' + token);
   document.getElementById('contact-form').submit();
 }
+function insertFooter() {
+  var htmlString = 'myHtml';
+  return htmlString;
+}

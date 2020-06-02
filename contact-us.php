@@ -36,61 +36,12 @@ The above copyright notice and this permission notice shall be included in all c
 </head>
 
 <body class="contact-page sidebar-collapse">
-  <nav class="navbar fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
-    <div class="container">
-      <div class="navbar-translate">
-        <a class="navbar-brand" href="/index.html">Hardware Rescue</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="dropdown nav-item">
-            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-              <i class="material-icons">info</i> About
-            </a>
-            <div class="dropdown-menu dropdown-with-icons">
-              <a href="../about-us.html" class="dropdown-item">
-                <i class="material-icons">people</i> Who We Are
-              </a>
-              <a href="../what-we-do.html" class="dropdown-item">
-                <i class="material-icons">computer</i> What We Do
-              </a>
-              <a href="../compare.html" class="dropdown-item">
-                <i class="material-icons">compare</i> Compare
-              </a>
-            </div>
-          </li>
-          <li class="dropdown nav-item">
-            <a href="../contact-us.html" class="nav-link">
-              <i class="material-icons">record_voice_over</i> Contact
-            </a>
-            <!-- <div class="dropdown-menu dropdown-with-icons">
-            <a href="../examples/about-us.html" class="dropdown-item">
-            <i class="material-icons">account_balance</i> Find us
-          </a>
-          <a href="../examples/contact-us.html" class="dropdown-item">
-          <i class="material-icons">art_track</i> Get in touch
-        </a>
-      </div> -->
-    </li>
-    <li class="button-container nav-item iframe-extern">
-      <a href="../purchase.html" class="btn  btn-primary   btn-round btn-block">
-        <i class="material-icons">shopping_cart</i> Buy Now
-      </a>
-    </li>
-  </ul>
-</div>
-</div>
-</nav>
+  <nav class="navbar fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+    <?php include('nav_default.php') ?>
+  </nav>
 <div id="contactUsMap" class="big-map"></div>
 <div class="main main-raised">
   <div class="container">
-
     <div class="contact-content">
       <h2 class="title text-center">Let's get in touch</h2>
       <h5 class="text-muted text-center">Ready to get the most out of your computer for an unbeatable price? Give us a call or send us an email (or fill out and submit the form below), and we will schedule a free appraisal at your convenience!</h5><br>
@@ -164,115 +115,7 @@ The above copyright notice and this permission notice shall be included in all c
         </div>
       </div>
     </div>
-    <footer class="footer footer-big">
-      <div class="container">
-        <div class="content">
-          <div class="row">
-            <div class="col-md-3">
-              <h5>Hardware Rescue</h5>
-              <p>Hardware Rescue believes everyone needs access to a computer that they are comfortable using, and we love solving the problems that are holding you back!</p>
-            </div>
-            <div class="col-md-2">
-              <h5>About</h5>
-              <ul class="links-vertical">
-                <li>
-                  <a href="./about-us.html">
-                    Who We Are
-                  </a>
-                </li>
-                <li>
-                  <a href="./what-we-do.html">
-                    What We Do
-                  </a>
-                </li>
-                <li>
-                  <a href="./compare.html">
-                    Compare
-                  </a>
-                </li>
-                <li>
-                  <a href="./contact-us.html">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-2">
-              <h5>Market</h5>
-              <ul class="links-vertical">
-                <li>
-                  <a href="./purchase.html#faq">
-                    Sales FAQ
-                  </a>
-                </li>
-                <li>
-                  <a href="#pablo">
-                    How to Register
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-2">
-              <h5>Legal</h5>
-              <ul class="links-vertical">
-                <li>
-                  <a href="./purchase.html#faq">
-                    Transactions FAQ
-                  </a>
-                </li>
-                <li>
-                  <a href="#pablo">
-                    Terms &amp; Conditions
-                  </a>
-                </li>
-                <li>
-                  <a href="#pablo">
-                    Licenses
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <h5>Subscribe to Newsletter</h5>
-              <p>
-                Join our newsletter and get occasional bits of news and updates.
-              </p>
-              <form class="form form-newsletter" method="" action="">
-                <div class="form-group">
-                  <input type="email" class="form-control" placeholder="Your Email...">
-                </div>
-                <button type="button" class="btn btn-primary btn-just-icon" name="button">
-                  <i class="material-icons">mail</i>
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <ul class="social-buttons">
-          <li>
-            <a href="#pablo" class="btn btn-just-icon btn-link btn-twitter">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/Hardware-Rescue-LLC-105882404275675" class="btn btn-just-icon btn-link btn-facebook">
-              <i class="fa fa-facebook-square"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#pablo" class="btn btn-just-icon btn-link btn-youtube">
-              <i class="fa fa-youtube-play"></i>
-            </a>
-          </li>
-        </ul>
-        <div class="copyright pull-center">
-          Copyright &#xA9; <script>
-            document.write(new Date().getFullYear())
-          </script> Hardware Rescue LLC, All Rights Reserved.
-        </div>
-      </div>
-    </footer>
+<?php include('footer.php') ?>
     <!--   Core JS Files   -->
     <script src="../assets/js/core/jquery.min.js" type="text/javascript"></script>
     <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
